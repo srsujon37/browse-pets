@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prowse Pets</title>
+    <title>Browse Pets</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/logo-header.png" type="image/x-icon">
     <!-- tailwindcss -->
@@ -14,6 +14,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'color-primary': '#FFDC26',
+                'color-bg': '#F9DF8A',
               }
             }
           }
@@ -36,12 +38,65 @@
         .sora {
         font-family: "Sora", serif;
         }     
-
-
       </style>
-
 </head>
 <body>
+    <!-- Header section design -->
+     <header class="bg-[#FFF9F4]">
+        <!-- navbar -->
+         <nav class="container mx-auto bg-[#FFF9F4] sora">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-xl"><img class="sm:navbar-end hidden sm:block" src="./assets/nav logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                  <a class="hidden sm:block w-6" href=""><i class="fa-regular fa-bell"></i></a>
+                  <a class="hidden sm:block w-6" href=""><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                  <a class="btn hidden sm:block bg-[#ffffff] py-4 px-7 border border-[#FFDC26]">Login</a>
+                  <a class="btn hidden sm:block px-8 py-4 border-none bg-[#FFDC26]">Register</a>
+                  <a class="text-xl"><img class="lg:hidden md:hidden" src="./assets/nav logo.svg" alt=""></a>
+                </div>
+              </div>
+         </nav>
+     </header>
+     <!-- main content section -->
+      <main>
+
+      </main>
+      <!-- footer design -->
+       <footer>
+
+       </footer>
     
 </body>
 </html>
